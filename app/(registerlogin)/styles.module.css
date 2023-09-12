@@ -78,12 +78,11 @@
     height: 100%;
     margin-top: -80px;
   }
-  
   .input {
     display: flex;
     align-items: center;
     margin-bottom: 35px;
-    width: 88%; 
+    width: 100%;
     background: #ffffff;
     border-radius: 50px;
     border-width: 2px;
@@ -104,8 +103,10 @@
     font-size: 19px;
     font-family: 'Poppins', sans-serif;
     padding-left: 20px;
-    padding-right: 50px; 
+    padding-right: 60px; /* Adjust the space for the eye image */
+    box-sizing: border-box; /* Include padding and border within the width */
   }
+  
   
   /* Sign In and Google button*/
   .submit, .signgoogle {
@@ -144,11 +145,13 @@
   /* eye icon */
   .eye {
     position: absolute;
-      right: 15px; 
-      top: 50%;
-      transform: translateY(-50%);
-      cursor: pointer;
+    left: 10px; /* Adjust the left position as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
   }
+  
+  
   
   .submit-container{
     display: flex;
@@ -159,4 +162,39 @@
   .gray{
     background: #eaeaea;
     color: black;
+  }
+
+
+  @media screen and (max-width: 425px) {
+    .row {
+      flex-direction: column;
+      align-items: center; /* Center both columns vertically */
+    }
+  
+    .column {
+      max-width: 100%;
+      border-radius: 0;
+      margin-bottom: 20px; /* Add margin between the columns on mobile */
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+    }
+  
+    .column1 {
+      margin-top: 30px;
+      max-width: 100%;
+    }
+  
+    .text1 {
+      font-size: 60px;
+      margin-top: 20px;
+    }
+    .qr {
+      /* size: 250px; */
+      /* margin-left: 40px; */
+      max-width: 80%; 
+        height: auto;
+       margin-top: auto;
+    }
+  
+    /* Additional CSS adjustments for mobile can be placed here */
   }
