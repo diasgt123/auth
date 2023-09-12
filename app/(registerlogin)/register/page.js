@@ -1,9 +1,9 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import styles from "../styles.module.css";
 
-const Register = () => {
+const register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -119,4 +119,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default register;
