@@ -170,17 +170,16 @@
       flex-direction: column;
       align-items: center; /* Center both columns vertically */
     }
-  
     .column {
       max-width: 100%;
       border-radius: 0;
-      margin-bottom: 20px; /* Add margin between the columns on mobile */
+      /* margin-bottom: 20px; */
       border-bottom-left-radius: 30px;
       border-bottom-right-radius: 30px;
     }
   
     .column1 {
-      margin-top: 30px;
+      /* margin-top: 30px; */
       max-width: 100%;
     }
   
@@ -195,6 +194,12 @@
         height: auto;
        margin-top: auto;
     }
+    .inputs {
+        width: 70vw;
+        margin-top: 0.5rem;
+      }
+    .input{
+      margin-bottom: 1rem;
+    }
   
-    /* Additional CSS adjustments for mobile can be placed here */
   }

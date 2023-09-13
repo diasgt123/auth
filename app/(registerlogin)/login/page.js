@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import styles from "../styles.module.css";
+import styles from "./login.css";
 import { useRouter } from "next/navigation";
 
 const login = () => {
@@ -50,20 +50,30 @@ const login = () => {
 
   return (
     <>
-      <h2>Login</h2>
-      <input
-        type="email"
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <button onClick={handleLogin}>Login</button>
+      {/* <h2>Login</h2> */}
+      <div className="inputs">
+          <div className="input">
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+          <div className="input">
+            <input
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </div>
+          <div className="login">
+          <button 
+          
+            onClick={handleLogin}>Login</button>
+          </div>
+      </div>
     </>
   );
 };

@@ -38,7 +38,7 @@ const register = () => {
     try {
       // Step 5: Check if the password and confirm password match
       if (password !== confirmPassword) {
-        alert("Password and confirm password do not match.");
+        alert("Passwords do not match.");
         return;
       }
 
@@ -88,30 +88,34 @@ const register = () => {
             onChange={handlePasswordChange}
           />
           {password && (
-  <img
-    src={showPassword ? "/eye.png" : "/eye2.png"}
-    alt="Toggle Password Visibility"
-    className="eye"
-    onClick={togglePasswordVisibility}
-  />
-)}
+            <img
+              src={showPassword ? "/eye.png" : "/eye2.png"}
+              alt="Toggle Password Visibility"
+              className="eye"
+              onClick={togglePasswordVisibility}
+            />
+          )}
         </div>
-
-        {/* Step 4: Add an input field for confirm password */}
         <div className={styles.input}>
           <input
             type="password"
             placeholder="Confirm Password"
             value={confirmPassword}
-            onChange={handleConfirmPasswordChange} // Attach the event handler
+            onChange={handleConfirmPasswordChange} 
           />
+          {password && (
+            <img
+              src={showPassword ? "/eye.png" : "/eye2.png"}
+              alt="Toggle Password Visibility"
+              className="eye"
+              onClick={togglePasswordVisibility}
+            />
+          )}
         </div>
-
         <div className={styles.submit}>
           <button onClick={handleRegistration}>Sign Up</button>
         </div>
       </div>
-
       <p>
         Already have an account? <a href="/login">Log in</a>
       </p>

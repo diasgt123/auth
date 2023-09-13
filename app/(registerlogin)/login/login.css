@@ -1,0 +1,108 @@
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: -80px;
+    width: 18vw;
+  }
+  
+  .input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 50px;
+    border-width: 2px;
+    border-color: #000000;
+    border-style: solid;
+    position: relative;
+  }
+  
+  .input input {
+    flex: 1;
+    height: 50px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    color: #797979;
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 20px;
+    padding-right: 60px;
+    box-sizing: border-box;
+  }
+  
+  .input input {
+    padding-right: 20px; /* Adjust padding to match the register page */
+  }
+  
+  /* eye icon */
+  .eye {
+    position: absolute;
+    left: 10px; /* Adjust the left position as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #000000;
+    border-radius: 30px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    height: 55px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .login:hover {
+    background-color: #323837;
+  }
+  
+
+  @media screen and (max-width: 425px) {
+    .row {
+      flex-direction: column;
+      align-items: center; /* Center both columns vertically */
+    }
+    .column {
+      max-width: 100%;
+      border-radius: 0;
+      margin-bottom: 20px; /* Add margin between the columns on mobile */
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+    }
+  
+    .column1 {
+      margin-top: 30px;
+      max-width: 100%;
+    }
+  
+    .text1 {
+      font-size: 60px;
+      margin-top: 20px;
+    }
+    .qr {
+      /* size: 250px; */
+      /* margin-left: 40px; */
+      max-width: 80%; 
+        height: auto;
+       margin-top: auto;
+    }
+    .inputs {
+        width: 70vw;
+        margin-top: 5rem;
+      }
+  
+  }

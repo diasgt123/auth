@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 
 
 const Scan = () => {
+  const router = useRouter();
   return (
     <div className="page2">
       <header className="header">
